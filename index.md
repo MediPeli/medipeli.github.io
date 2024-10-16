@@ -22,6 +22,10 @@ Welcome to the developer conventions guide for **Medipeli**. This document provi
 
 ## Commit Message Conventions
 
+> Please check [How to Write a Git Commit Message](https://cbea.ms/git-commit/) by [cbeams](https://cbea.ms/author/cbeams/) first. But keep in mind we will build our approach on top it, do not use is as how it is.
+
+
+
 Following a consistent commit message style is important for maintaining a **clean history**. Use the following template for all commit messages:
 
 ```bash
@@ -48,17 +52,54 @@ We follow a consistent coding style to ensure readability and maintainability.
 
 
 ## Code Reviews and Pull Requests
-Please read **How to Do Code Reviews Like a Human** [1](https://mtlynch.io/human-code-reviews-1/) and [2](https://mtlynch.io/human-code-reviews-2/) from [Michael Lynch](https://mtlynch.io/) before you start coding anything. It does not matter you are a **Reviewer** or **Author**.
+Please read **How to Do Code Reviews Like a Human** [1](https://mtlynch.io/human-code-reviews-1/) and [2](https://mtlynch.io/human-code-reviews-2/) from [Michael Lynch](https://mtlynch.io/) before you start coding anything. It does not matter you are a **Reviewer** or **Author**. But if you are an **Author**, I highly recommend you to read [How to Make Your Code Reviewer Fall in Love with You](https://mtlynch.io/code-review-love/) first and then read **How to Do Code Reviews Like a Human** series.
 
-####  Code Review Process:
-- Create a pull request with a **clear description of changes**.
-- Ensure that **all unit tests pass**.
-- At least one other developer must review and **approve the pull request** before merging.
+### Best Practices for *Authors* in a [Detailed Way](https://mtlynch.io/code-review-love/)
 
-#### Best Practices for Pull Requests:
-- Keep pull requests **small** and focused.
-- **Provide context** for changes in the PR description.
-- Reference **related issues** by using #issue-number.
+#### 1. **Review Your Own Code First**
+####  2. **Write a Clear and Detailed PR Description**
+
+A strong PR description should explain:
+
+-   **What** the change does.
+-   **Why** it’s being made.
+
+Even though you might have a specific reviewer in mind, others or future contributors may need to understand the context. Make sure the description provides enough background for any team member or reader in the future to understand your intentions.
+
+#### 3. **Automate Simple Checks**
+
+Before submitting a PR, ensure that automated checks like linters, formatters, and tests have been run. Use **continuous integration (CI)** or pre-commit hooks to catch these issues automatically.
+
+#### 4. **Let the Code Answer Questions**
+
+If your reviewer expresses confusion, use the feedback as an opportunity to improve the code, not just to explain it in the review. 
+
+#### 5. **Narrowly Scope Changes**
+
+Keep your PR focused on [one task](https://blog.codinghorror.com/curlys-law-do-one-thing/). Avoid scope creep, where you start addressing unrelated issues in the same PR.
+
+#### 6. **Separate Functional and Non-Functional Changes**
+
+If you’re making both functional (logic) and non-functional (formatting or refactoring) changes, separate them into different PRs. 
+
+#### 7. **Break Up Large PRs**
+
+Large PRs are harder to review and increase the risk of mistakes being missed. If your PR grows beyond **400 lines of production code**, look for ways to split it into smaller, more digestible PRs.
+
+#### 8. **Respond Graciously to Feedback**
+
+When you receive feedback, don’t take it personally. Treat it as a valuable learning opportunity and respond with gratitude. 
+
+#### 9. **Be Patient When the Reviewer Is Wrong**
+
+#### 10. **Communicate Clearly During the Review**
+
+#### 11. **Solicit Missing Information Artfully**.
+
+#### 12. **Award All Ties to Your Reviewer**
+
+#### 13. **Minimize Lag Between Review Rounds**
+
 
 ## Branching Strategy
 Our branching strategy follows the `GitFlow methodology`. The key branches are:
