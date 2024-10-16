@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Developer Conventions
@@ -7,7 +8,7 @@ description: "Best practices and conventions for developers"
 
 # Developer Conventions
 
-Welcome to the developer conventions guide for Medipeli. This document provides guidelines for code style, commit message conventions, and best practices for developers working on our projects.
+Welcome to the developer conventions guide for **Medipeli**. This document provides guidelines for code style, commit message conventions, and best practices for developers working on our projects.
 
 ---
 
@@ -22,7 +23,7 @@ Welcome to the developer conventions guide for Medipeli. This document provides 
 
 ## Commit Message Conventions
 
-Following a consistent commit message style is important for maintaining a clean history. Use the following template for all commit messages:
+Following a consistent commit message style is important for maintaining a **clean history**. Use the following template for all commit messages:
 
 ```bash
 <type>(<scope>): <subject>
@@ -31,7 +32,7 @@ Following a consistent commit message style is important for maintaining a clean
 feat(login): add OAuth 2.0 login flow
 ```
 
-#### Commit Types:
+### Commit Types:
 - **feat**: A new feature
 - **fix**: A bug fix
 - **docs**: Documentation-only changes
@@ -40,37 +41,41 @@ feat(login): add OAuth 2.0 login flow
 - **test**: Adding or modifying tests
 - **chore**: Maintenance and other tasks
 
+> Please check this website for better understanding:
+> https://www.conventionalcommits.org/en/v1.0.0/
+
 ## Coding Style Guidelines
 We follow a consistent coding style to ensure readability and maintainability. 
 
 
 ## Code Reviews and Pull Requests
-####  Code Review Process:
-- Create a pull request with a clear description of changes.
-- Ensure that all unit tests pass.
-- At least one other developer must review and approve the pull request before merging.
+###  Code Review Process:
+- Create a pull request with a **clear description of changes**.
+- Ensure that **all unit tests pass**.
+- At least one other developer must review and **approve the pull request** before merging.
 
-#### Best Practices for Pull Requests:
-- Keep pull requests small and focused.
-- Provide context for changes in the PR description.
-- Reference related issues by using #issue-number.
+### Best Practices for Pull Requests:
+- Keep pull requests **small** and focused.
+- **Provide context** for changes in the PR description.
+- Reference **related issues** by using #issue-number.
 
 ## Branching Strategy
-Our branching strategy follows the GitFlow methodology. The key branches are:
+Our branching strategy follows the `GitFlow methodology`. The key branches are:
 
-- main: Stable production-ready code.
-- develop: Active development, which will eventually be merged into main.
-- Feature branches: Created for each new feature, named feature/branch-name.
+- **main**: Stable production-ready code.
+- **develop**: Active development, which will eventually be merged into main.
+- **Feature branches**: Created for each new feature, named feature/branch-name.
 
-#### Branch Naming:
-- Use descriptive names for branches.
-- Example: `feature/add-login-page` .
+### Branch Naming:
+Use descriptive names for branches.
+
+> Example: `feature/add-login-page` .
 
 ## Versioning
-We use Semantic Versioning to track changes in our projects.
+We use `Semantic Versioning` to track changes in our projects.
 
-#### Versioning Format:
-Format : *MAJOR.MINOR.PATCH*
+### Versioning Format:
+*MAJOR.MINOR.PATCH*
 - **MAJOR**: Breaking changes.
 - **MINOR**: New features that are backward-compatible.
 - **PATCH**: Bug fixes.
