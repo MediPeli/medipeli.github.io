@@ -44,8 +44,7 @@ feat(login): add OAuth 2.0 login flow
 - **test**: Adding or modifying tests
 - **chore**: Maintenance and other tasks
 
-> Please check this website for better understanding:
-> https://www.conventionalcommits.org/en/v1.0.0/
+Please check this website for better understanding: [Conventional Commits]([https://google.github.io/styleguide/](https://www.conventionalcommits.org/en/v1.0.0)). 
 
 ## Coding Style Guidelines
 We follow a consistent coding style to ensure readability and maintainability. You can check [Google`s coding style sheet](https://google.github.io/styleguide/). 
