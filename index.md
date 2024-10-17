@@ -48,7 +48,63 @@ feat(login): add OAuth 2.0 login flow
 > https://www.conventionalcommits.org/en/v1.0.0/
 
 ## Coding Style Guidelines
-We follow a consistent coding style to ensure readability and maintainability. 
+We follow a consistent coding style to ensure readability and maintainability. You can check [Google`s coding style sheet](https://google.github.io/styleguide/). 
+
+### JavaScript Style Guide
+
+#### 1. **File Naming & Structure**
+
+-   **File Names**: All lowercase, may use underscores (`_`) or dashes (`-`), and end with `.js`.
+-   **File Encoding**: UTF-8.
+-   **File Structure**: Include license, `@fileoverview` JSDoc, imports, and the file’s implementation, each separated by blank lines.
+
+#### 2. **Whitespace & Special Characters**
+
+-   **Whitespace**: Use spaces (no tabs) for indentation.
+-   **Line Breaks**: Break long lines before 80 characters.
+-   **Special Characters**: Use readable Unicode or escape sequences as needed.
+
+#### 3. **Modules & Imports**
+
+-   **Modules**: Use `goog.module` or ES `import/export`.
+-   **Imports**: Always use full file paths with `.js` extensions and avoid default exports. Import names follow `lowerCamelCase`.
+
+#### 4. **Braces & Control Structures**
+
+-   **Braces**: Use braces for all control structures (`if`, `else`, `for`, etc.), even for single statements.
+-   **Control Statements**: Can be on a single line only if very short.
+
+#### 5. **Comments & Documentation**
+
+-   **JSDoc Comments**: Use `/** */` for function and file-level documentation. Avoid documenting implementation details that are obvious in code.
+-   **Inline Comments**: Use comments to explain complex logic or context, keeping them relevant and concise.
+
+#### 6. **Code Layout & Formatting**
+
+-   **Indentation**: Always use 2 spaces.
+-   **Array & Object Literals**: Optionally use "block-like" formatting with each item on a new line for clarity.
+
+#### 7. **Naming Conventions**
+
+-   **Variables and Functions**: Use `lowerCamelCase` for variables and function names.
+-   **Classes**: Use `UpperCamelCase`.
+-   **Constants**: Use `UPPER_SNAKE_CASE`.
+
+#### 8. **Error Handling**
+
+-   Always use `try/catch` for error handling when necessary.
+-   Ensure proper logging or handling of errors, avoiding empty `catch` blocks.
+
+#### 9. **Testing**
+
+-   Write tests for all new code, and ensure that changes do not break existing tests.
+
+For more information, refer to the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)​
+
+.
+### Additional Resources
+- [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
+- [Once And Only Once](https://c2.com/xp/OnceAndOnlyOnce.html?ref=blog.codinghorror.com) 
 
 
 ## Code Reviews and Pull Requests
